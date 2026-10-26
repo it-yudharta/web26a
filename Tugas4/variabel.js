@@ -56,3 +56,10 @@ const hasilFilter = keranjang.filter(i => i.harga > 3000)
 const hasilMap = keranjang.map(({nama, qty, harga}) => ({nama, qty, harga, total: qty * harga}))
 
 console.log(hasilMap);
+
+// const totalBelanja = hasilMap.reduce((x, {total}) => {
+//     const hasil = x + total
+//     return hasil
+// }, 0)
+const totalBelanja = hasilMap.reduce((x, { total }) => x + total, 0)
+console.log(totalBelanja);
