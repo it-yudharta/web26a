@@ -37,4 +37,14 @@ const orang = {
     }
 }
 // output reog
-console.log(orang.hobi[2].details[1])
+// console.log(orang.hobi[2].details[1])
+
+const keranjang = [
+    { nama: 'Crystalin', qty: 3, harga: 1_200 },
+    { nama: 'Buku', qty: 1, harga: 5_200 },
+    { nama: 'Pensil', qty: 3, harga: 2_200 },
+    { nama: 'Penghapus', qty: 5, harga: 3_200 },
+];
+
+const hasilFilter = keranjang.filter(i => i.harga > 3000)
+console.log(hasilFilter);
