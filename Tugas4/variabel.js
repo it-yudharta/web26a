@@ -23,4 +23,18 @@ const barang = {
 
 // console.log(barang.nama)
 // console.log(barang['harga lama'])
-console.log(barang)
+// console.log(barang)
+
+const hobi = ['membaca', 'menulis', 'menari']
+// console.log(hobi[2])
+
+const orang = {
+    nama: 'Cahya',
+    hobi: ['baca', 'tulis', { jenis: 'tari', details: ['piring', 'reog'] }],
+    alamat: {
+        desa: 'sengonagung',
+        kecamatan: 'purwosari'
+    }
+}
+// output reog
+console.log(orang.hobi[2].details[1])
