@@ -47,4 +47,12 @@ const keranjang = [
 ];
 
 const hasilFilter = keranjang.filter(i => i.harga > 3000)
-console.log(hasilFilter);
+// console.log(hasilFilter);
+
+// const hasilMap = keranjang.map(({nama, qty, harga}) => {
+//     const total = qty * harga
+//     return { nama, qty, harga, total }
+// })
+const hasilMap = keranjang.map(({nama, qty, harga}) => ({nama, qty, harga, total: qty * harga}))
+
+console.log(hasilMap);
