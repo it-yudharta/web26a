@@ -1,11 +1,19 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <nav>
+    <RouterLink to="/">Beranda</RouterLink>
+    <RouterLink to="/cart">Keranjang</RouterLink>
+  </nav>
+  <main>
+    <RouterView />
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+</style>
